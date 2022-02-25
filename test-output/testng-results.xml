@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-25T02:42:12 PST" name="Default suite" finished-at="2022-02-25T02:42:18 PST" duration-ms="6455">
+    <groups>
+    </groups>
+    <test started-at="2022-02-25T02:42:12 PST" name="Default test" finished-at="2022-02-25T02:42:18 PST" duration-ms="6455">
+      <class name="testcases.SignupTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.SignupTests@4738a206]" started-at="2022-02-25T02:42:12 PST" name="setup" finished-at="2022-02-25T02:42:14 PST" duration-ms="2733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignupFlow()[pri:0, instance:testcases.SignupTests@4738a206]" started-at="2022-02-25T02:42:14 PST" name="testSignupFlow" finished-at="2022-02-25T02:42:18 PST" duration-ms="3529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignupFlow -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.SignupTests@4738a206]" started-at="2022-02-25T02:42:18 PST" name="teardown" finished-at="2022-02-25T02:42:18 PST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.SignupTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
