@@ -16,6 +16,7 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div/div/div/div/div[2]/div[2]/div[4]/button")
 	private WebElement loginButton;
 
+	// Using full xpath since the element is generated with a new identifier every time.
 	@FindBy(xpath = "/html/body/div[2]/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div[3]")
 	private WebElement noAccountFoundErrorMessage;
 

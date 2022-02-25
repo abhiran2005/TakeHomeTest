@@ -10,9 +10,14 @@ public class BaseTest {
 
 	@BeforeTest
 	public void setup() {
-		driver = new ChromeDriver();
+		try {
+			driver = new ChromeDriver();
+		} catch (Exception e) {
+			System.out.println("Unable to initiate the web driver.");
+			e.printStackTrace();
+		}
 	}
-	
+
 	@AfterTest
 	public void teardown() {
 		driver.close();

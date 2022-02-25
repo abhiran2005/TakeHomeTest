@@ -17,8 +17,16 @@ public class LoginTests extends BaseTest {
 	private static final String URL = "https://www.quora.com/";
 	private static final String NO_ACC_FOUND_ERR_ENG = "No account found for this email. Retry, or Sign up for Quora.";
 
+	/***
+	 * Verify a user without an account cannot login via email/password.
+	 * This test tries to login with auto generated email address and password combination and verifies that appropriate error messages are displayed.
+	 */
 	@Test
 	public static void testUserWithoutAccCannotLogin() {
+		/*NOTE: Adding multiple verifications in one testcase to reduce the setup time. 
+		 * Ideally one test should test an isolated element/workflow. 
+		 * However, UI tests are resource intensive and slow. 
+		 * Adding hundreds of such tests would extend the test execution time significantly. */
 		driver.get(URL);
 		LoginPage loginPage = new LoginPage(driver);
 
